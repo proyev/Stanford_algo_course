@@ -17,8 +17,8 @@ def karatsuba(num1, num2):
         bc = karatsuba(b, c)
         bd = karatsuba(b, d)
 
-    return str((10 ** len(num1))*int(ac) +\
-               (10**(len(num1)//2))*(int(ad) + int(bc)) + int(bd))
+    return str((10 ** len(num1)) * int(ac) +\
+               (10 ** (len(num1) // 2)) * (int(ad) + int(bc)) + int(bd))
 
 
 
